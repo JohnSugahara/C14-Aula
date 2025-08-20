@@ -1,8 +1,8 @@
 import requests
 
 def main():
-    pokemon = input("Digite o seu Pokémon: ")
-    url = f"https://pokeapi.co/api/v2/pokemon/{pokemon.lower()}"
+    digimon = input("Digite o seu Digimon: ")
+    url = f"https://digi-api.com/api/v1/digimon/{digimon.lower()}"
 
     resposta = requests.get(url)
 
@@ -15,7 +15,7 @@ def main():
         for habilidade in dados["abilities"]:
             print(f" - {habilidade['ability']['name']}")
     else:
-        print(f"Erro: Pokémon '{pokemon}' não encontrado.")
+        print(f"Erro: Digimon '{digimon}' não encontrado.")
 
 if __name__ == "__main__":
     main()
