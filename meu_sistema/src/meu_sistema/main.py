@@ -1,8 +1,8 @@
 import requests
 
 def main():
-    pokemon = input("Digite o nome de um Pokémon: ")
-    url = f"https:// digi-api.com/api/v1/digimon/{pokemon.lower()}"
+    pokemon = input("Digite o seu Pokémon: ")
+    url = f"https://pokeapi.co/api/v2/pokemon/{pokemon.lower()}"
 
     resposta = requests.get(url)
 
