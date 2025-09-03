@@ -9,7 +9,7 @@ def main():
     if resposta.status_code == 200:
         dados = resposta.json()
         print(f"\nNome: {dados['name'].title()}")
-        print(f"Altura: {dados['height']} dm")
+        print(f"Altura: {dados['name']} dm")
         print(f"Peso: {dados['weight']} hg")
         print("Habilidades:")
         for habilidade in dados["abilities"]:
